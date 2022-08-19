@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeOptionCollectionCell" id="gTV-IL-0wX" customClass="HomeOptionCollectionCell" customModule="Birthday_Photo_Maker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="159"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_circle" translatesAutoresizingMaskIntoConstraints="NO" id="9lH-tu-UUp" userLabel="ImgViewWildAnimal">
+                        <rect key="frame" x="7.5" y="-20.5" width="200" height="200"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="Oux-7T-gfh"/>
+                            <constraint firstAttribute="width" secondItem="9lH-tu-UUp" secondAttribute="height" multiplier="1:1" id="f9a-xd-eGP"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9lH-tu-UUp" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="T2U-Zb-tJ2"/>
+                <constraint firstItem="9lH-tu-UUp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vv1-vW-ZVK"/>
+            </constraints>
+            <size key="customSize" width="215" height="159"/>
+            <connections>
+                <outlet property="imgViewOption" destination="9lH-tu-UUp" id="bF6-bx-73i"/>
+                <outlet property="widthOptionView" destination="Oux-7T-gfh" id="4iP-Bb-zlb"/>
+            </connections>
+            <point key="canvasLocation" x="154.34782608695653" y="102.12053571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="green_circle" width="600" height="600"/>
+    </resources>
+</document>
